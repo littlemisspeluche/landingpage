@@ -1,0 +1,485 @@
+ #mouse-pointer{
+      position: absolute;
+      bottom: 50%;
+      right: 50%;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background-color: rgb(79, 76, 76);
+      opacity: 0.80;
+   }
+
+/* Big Screen (1324px to 1140px)*/
+body {
+      height: -webkit-fill-available !important;
+}
+/*Headings and Paragraph*/
+h2 {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  color:#4c4a48;
+  font-family: 'Hind', sans-serif;
+  text-align: center;
+  font-size: 18px;
+}
+
+h2:after{
+  display: block;
+  height: 2px;
+  background-color: #f1c40f;
+  content: " ";
+  width: 120px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+/*----Navbar----*/
+.navbar-top {
+  float: right;
+  list-style: none;
+  margin-top:35px;
+  margin-right: 30px;
+}
+
+.navbar-top li {
+  display: inline-block;
+  margin-left: 40px;
+}
+.navbar-top li:last-child { margin-right: 20px; }
+.navbar-top li:hover {
+  border-bottom: 2px solid #f1c40f;
+  -webkit-transition: border-bottom 0.2s;
+}
+
+.navbar-top li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 17px;
+  font-family: 'Hind', sans-serif;
+  color:rgba(230, 216, 188, 0.89);
+}
+
+.navbar-icon { display: none; }
+
+
+/*-------Header-------*/
+
+header {
+  background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/tacos.jpg);
+  height: 700px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: auto;
+  margin: 0;
+}
+
+.main-banner {
+  position: relative;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-banner h1 {
+  position: absolute;
+  left: 120px;
+  text-transform: uppercase;
+  font-size: 42px;
+  font-family: 'Hind', sans-serif;
+  color:rgba(230, 216, 188, 0.89);
+  line-height: 60px;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+}
+
+/*------Food Service Section------*/
+
+.section-fast-and-healty {
+  color: #4c4a48;
+  font-family: 'Hind', sans-serif;
+  padding: 20px 20px 50px;
+  background-color: #f2f0d5;
+  width: 100%;
+}
+.section-fast-and-healty h2 {
+  text-transform: uppercase;
+  margin: 90px 0 40px;
+  color: #4c4a48;
+  font-family: 'Hind', sans-serif;
+  text-align: center;
+}
+
+#bigger-paragraph {
+  color:#4c4a48;
+  font-family: 'Hind', sans-serif;
+  text-align: center;
+  font-size: 19px;
+  margin-bottom: 80px;
+}
+
+.section-fast-and-healty h3{
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.section-fast-and-healty p { margin-bottom: 30px; }
+
+.big-icon {
+  font-size: 40px;
+  display: block;
+  color: #f1c40f;
+  margin-bottom: 10px;
+}
+
+.service-description {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.box {
+  width: 26%;
+  text-align: center;
+  margin: 10px 40px;
+}
+
+/*-------Images Section---------*/
+.section-food-images {
+  background-color: #f2f0d5;
+  height: 1230px;
+  position: relative;
+  bottom: 20px;
+  padding: 30px 0;
+}
+
+.food-images {
+  padding: 10px 0 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 5px;
+  list-style: none;
+  background-color: #f2f0d5;
+}
+
+.food-images li { margin: 10px; }
+
+.meal-image {
+  margin: 10px;
+  width: 313px;
+  height: 263px;
+  background-color: black;
+/*  opacity: 0.9;
+  filter: brightness(68%);*/
+  transition: transform 0.3s, opacity 0.3s;
+  transform: scale(1.0);
+}
+
+.meal-image:hover {
+  transform: scale(1.1);
+  opacity: 1; }
+
+.section-food-images h2 {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  color:#4c4a48;
+  font-family: 'Hind', sans-serif;
+  text-align: center;
+  font-size: 32px;
+}
+
+
+/*-----How It Works Section-----*/
+.section-how-it-works {
+  height: 810px;
+  position: relative;
+  bottom: 103px;
+  font-size: 16px;
+  font-weight: lighter;
+  font-family: 'Hind', sans-serif;
+  color:#4c4a48;
+  clear: both;
+  padding: 100px 20px 20px;
+  background-color: #f2f0cf;
+}
+
+
+.section-how-it-works h2 { margin-bottom: 45px; }
+
+.steps-box {
+  float: left;
+  position: absolute;
+  left: 500px;
+}
+
+.steps {
+  padding-left: 3%;
+  margin-top: 58px;
+  margin-bottom: 35px;
+  position: absolute;
+  left: 736px;
+}
+
+.app-screen {
+  width: 200px;
+  position: relative;
+  bottom: 38px;
+}
+
+.animated {
+  opacity:0;
+    margin-top: 200px;
+}
+/*------Work Steps------*/
+.work-step { margin-bottom: 40px; }
+.work-step:last-of-type { margin-bottom: 80px; }
+.work-step p { padding-top: 10px; }
+
+.step-number {
+  color: #f1c40f;
+  border: 3px solid #f1c40f;
+  font-family: 'Hind', sans-serif;
+  border-radius: 50%;
+  height: 54px;
+  width: 54px;
+  text-align: center;
+  padding: 5px;
+  float: left;
+  font-size: 150%;
+  margin-right: 20px;
+}
+
+/* App Store / Google Store Buttons */
+.btn-app {
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
+}
+
+/*-------Subscription Plans-------*/
+
+.section-subscription-plans{
+  background-color: #f2f0cf;
+  position: relative;
+  bottom: 103px;
+  padding: 10px 20px 60px;
+}
+
+.subscription-plans {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 70px;
+}
+
+.section-subscription-plans {
+  font-family: 'Hind', sans-serif;
+  color:#4c4a48;
+}
+
+.subscription-plan-box {
+  width: 100%;
+  margin: 30px;
+}
+
+.plan-meal {
+  background-color: #f5f4e9;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 10px;
+  height: 110px;
+}
+
+.plan-description {
+  padding: 10px;
+  border: 1px solid #f5f4e9;
+  border-radius: 5px;
+  background-color: #fcfbf4;
+}
+
+.plan-description ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.plan-description li { padding: 10px; }
+.plan-description i { color: #f1c40f; }
+
+.plan-meal h3 {
+  text-transform: uppercase;
+  font-weight: lighter;
+  margin: 10px 0 4px;
+}
+
+
+.price {
+  color: #f1c40f;
+  font-size: 24px;
+  font-weight: lighter;
+  margin-bottom: 2px;
+}
+
+.price span{
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.btn-registration {
+  position: relative;
+  left: 279px;
+  bottom: 17px;
+}
+.btn-yellow-full {
+  background-color: #f1c40f;
+  border-radius: 7px;
+  padding: 9px;
+  color: #4c4a48;
+}
+.fa-check-circle:before {
+    font-size: 19px;
+    margin-right: 19px;
+  }
+.btn-yellow-full:hover { text-decoration: none; }
+
+/*-------Cities-------*/
+.section-cities {
+  font-family: 'Hind', sans-serif;
+  color:#4c4a48;
+  padding: 100px 30px;
+  background-color: #f2f0cf;
+  position: relative;
+  bottom: 105px;
+}
+
+.cities {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.city-box {
+  width: 20%;
+  text-align: left;
+}
+
+.city-box h3 {
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+.city-box img{
+  width: 100%;
+  height: 280px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+}
+
+.city-box i {
+  color: #f1c40f;
+  font-size: 24px;
+  padding: 10px 10px 15px 0;
+}
+
+/*-------Form Section-------*/
+
+.section-form {
+  position: relative;
+  bottom: 105px;
+  font-family: 'Hind', sans-serif;
+  color:#4c4a48;
+  background-color: #f2f0cf;
+  height: 850px;
+}
+
+.form-box {
+  width: 820px;
+  background-color: rgb(255, 255, 255, 0.6);
+  font-family: 'Hind', sans-serif;
+  color:#4c4a48;
+  position: relative;
+  left: 22.5%;
+  top: 115px;
+  padding-top: 40px;
+}
+
+.form-input {
+  display: flex;
+  margin: 20px;
+  padding: 10px;
+}
+
+label {
+  width: 32%;
+  font-family: 'Hind', sans-serif;
+  font-weight: lighter;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 300 !important;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+  width: 400px;
+  padding: 7px;
+  border-radius: 3px;
+  border:  1px solid #ccc;
+}
+
+textarea{ height: 120px; }
+
+#send-it {
+  width: 120px;
+  height: 45px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 17px;
+  position: relative;
+  left: 380px;
+}
+
+/*-------Footer-------*/
+
+footer {
+  position: relative;
+  bottom: 107px;
+  background-color: #4c4a48;
+  height: 100px;
+}
+.footer-navigation {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 15px;
+}
+.footer-navigation ul {
+  list-style: none;
+  display: flex;
+}
+
+.footer-navigation li {
+  padding: 10px;
+  font-size: 16px;
+  font-family: 'Hind', sans-serif;
+}
+.footer-navigation a {
+  color:#f1c40f;
+  text-decoration: none;
+}
+.footer-navigation i {
+  font-size: 20px;
+  color: rgb(255, 255, 255, 0.6);
+  transition: color 0.2s;
+}
+
+.fa-facebook:hover{ color: #3b5998; }
+
+.fa-twitter:hover{ color: #1da1f2; }
+
+.fa-instagram:hover{ color: #7232bd; }
+
+footer p {
+  text-align: center;
+  color:rgb(255, 255, 255, 0.6);
+  margin-top: 15px;
+}
